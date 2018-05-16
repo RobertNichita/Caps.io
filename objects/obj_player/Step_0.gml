@@ -22,6 +22,7 @@ if(shooting){
 	instance_create_layer(x,y,"Player",obj_bullet);
 }
 
+///Melee
 if(melee && (meleeTimer > 0.5*room_speed)){
 	instance_create_layer(x,y,"Player",obj_melee);
 	meleeTimer = 0;
