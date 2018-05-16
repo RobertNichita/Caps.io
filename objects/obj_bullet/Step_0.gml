@@ -1,5 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
+timer++;
+
+origin_coords = scr_followparametric(timer,dir_b,0,0);
+x = Ox + origin_coords[0];
+y = Oy + origin_coords[1];
 if(distance_to_point(obj_player.x,obj_player.y) > 1000){
 	dead = true;
 }
