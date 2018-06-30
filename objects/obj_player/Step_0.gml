@@ -19,8 +19,22 @@ angle = point_direction(x,y,mouse_x,mouse_y) - 90;
 ///Shooting
 
 if(shooting){
-	rangle = (angle+90)/180*-pi;
-	instance_create_layer(x+(16*cos(rangle)),y+(16*sin(rangle)),"Player",obj_bullet);
+	if(wand){
+		rangle = (angle+90)/180*-pi;
+		instance_create_layer(x+(16*cos(rangle)),y+(16*sin(rangle)),"Player",obj_bullet);
+	}
+	if(rifle){
+		xjitter = random(accuracy)-accuracy/2;
+		yjitter = random(accuracy)-accuracy/2;
+		for(i = 0; i < range; i ++){
+				aimx = x + lengthdir_x(i,angle+90)+(xjitter*i/1000);
+				aimy = y + lengthdir_y(i,angle+90)+(yjitter*i/1000);
+		
+				if(tilemap_get_at_pixel("Collision",aimx,aimy)){
+					break;
+				}
+		}
+	}
 }
 
 ///Melee
