@@ -39,7 +39,7 @@ if(shooting){
 		}
 		shotdelay = 0;
 	}
-	part_particles_create(global.p_sys,x+lengthdir_x(32,angle+90),y+lengthdir_y(32,angle+90),global.muzzle,1);
+	part_particles_create(global.p_sys,x+lengthdir_x(16,angle+90),y+lengthdir_y(16,angle+90),global.muzzle,1);
 }
 
 ///Melee
