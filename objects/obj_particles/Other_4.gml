@@ -7,7 +7,7 @@ part_type_scale(global.shrapnel,0.1,1);
 part_type_speed(global.shrapnel,20,25,-0.5,0);
 part_type_direction(global.shrapnel,210 - obj_player.angle, 330 - obj_player.angle,0,0);
 part_type_life(global.shrapnel, 2, 5);
-part_type_orientation(global.shrapnel, 0, 270, 0, 0, 1)
+part_type_orientation(global.shrapnel, 0, 270, 0, 0, 1);
 
 global.muzzle = part_type_create();
 part_type_shape(global.muzzle,pt_shape_line);
