@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "2d0fc734-d8f1-4346-ade5-78d77d2b3439",
+            "Value": {
+                "id": "31b54561-3c63-48f1-906f-005a27199fb7",
+                "resourcePath": "sounds\\snd_gunshot\\snd_gunshot.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "3adf1de4-7a2b-4454-95e3-890cc938740f",
             "Value": {
                 "id": "669757a8-ef9e-4959-9aeb-33fde95c9379",

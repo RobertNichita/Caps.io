@@ -6,8 +6,9 @@ meleeTimer = 0;
 accuracy = 0;
 shooting = false;
 melee = false;
+shotdelay = 0;
 
-range = 1000;
+range = 1500;
 
 wand = false;
 rifle = true;
